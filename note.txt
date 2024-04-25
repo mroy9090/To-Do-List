@@ -1,0 +1,9 @@
+cors
+express
+jsonwebtoken
+mongoose
+nodemailer
+nodemon
+express-rate-limiter
+hpp
+helmet

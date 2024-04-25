@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "a883288f-88d0-4e2b-ae3b-80a21cea35f0",
+		"name": "TODOLIST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createprofile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\":      \"mridul\",\r\n    \"lastname\":       \"roy\",\r\n    \"email\":          \"m@mail.com\",\r\n    \"mobilenumber\":   \"0163xxxxxxxxxx\",\r\n    \"username\":       \"m@mail.com\",\r\n    \"password\":       \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/createprofile",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"createprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"m@mail.com\",\r\n    \"mobilenumber\":\"0173xxxxxxxxxx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/userlogin",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selectprofile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token-key",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTM4NTc1NjQsImRhdGEiOnsiX2lkIjoiNjYyNWY5YWYwNzM0YTVjNzU4ZDgyZGU2IiwiZmlyc3RuYW1lIjoiIHN1bWkiLCJsYXN0bmFtZSI6InJveSIsImVtYWlsIjoibUBtYWlsLmNvbSIsIm1vYmlsZW51bWJlciI6IjAxNzN4eHh4eHh4eHh4IiwidXNlcm5hbWUiOiJtQG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjMiLCJfX3YiOjB9LCJpYXQiOjE3MTM3NzExNjR9.0Gi_aKJuZYDU2erBdFpnAf78qrW8BZb2_N84_LwQJF8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{BaseURL}}/selectprofile",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"selectprofile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createtodolist",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "token-key",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTM4NTc1NjQsImRhdGEiOnsiX2lkIjoiNjYyNWY5YWYwNzM0YTVjNzU4ZDgyZGU2IiwiZmlyc3RuYW1lIjoiIHN1bWkiLCJsYXN0bmFtZSI6InJveSIsImVtYWlsIjoibUBtYWlsLmNvbSIsIm1vYmlsZW51bWJlciI6IjAxNzN4eHh4eHh4eHh4IiwidXNlcm5hbWUiOiJtQG1haWwuY29tIiwicGFzc3dvcmQiOiIxMjMiLCJfX3YiOjB9LCJpYXQiOjE3MTM3NzExNjR9.0Gi_aKJuZYDU2erBdFpnAf78qrW8BZb2_N84_LwQJF8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"TodoSubject\":\"TodoSubject\",\r\n    \"TodoDescription\":\"TodoDescription\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseURL}}/createtodolist",
+					"host": [
+						"{{BaseURL}}"
+					],
+					"path": [
+						"createtodolist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "selecttodolist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "updatetodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "deletetodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseURL",
+			"value": "http://localhost:5050/api/v1"
+		},
+		{
+			"key": "Token",
+			"value": ""
+		}
+	]
+}
