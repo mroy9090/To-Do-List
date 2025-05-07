@@ -1,18 +1,15 @@
-# todolist-rest-api-nodejs-mongo-vercel.app
-
-A simple To-Do List REST API built with Node.js, Express.js, and MongoDB, deployed on Vercel.
+#Todo List
 
 ## Overview
-
 This project provides a basic backend API for managing a to-do list. It allows users to create, read, update, and delete tasks.
 
 ## Technologies Used
 
-* **Node.js:** JavaScript runtime environment.
-* **Express.js:** Minimalist web application framework for Node.js.
-* **MongoDB:** NoSQL database for storing task data.
-* **Mongoose:** MongoDB object modeling tool for Node.js.
-* **Vercel:** Platform for serverless function deployment.
+* Node.js: JavaScript runtime environment.
+* Express.js: Minimalist web application framework for Node.js.
+* MongoDB: NoSQL database for storing task data.
+* Mongoose: MongoDB object modeling tool for Node.js.
+* Vercel: Platform for serverless function deployment.
 
 ## Getting Started
 
